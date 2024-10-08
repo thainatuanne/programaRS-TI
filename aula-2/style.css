@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2980b9;
+    color: #f2f3f4;
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="button"]:hover {
+    background-color: #7fb3d5;
+}
