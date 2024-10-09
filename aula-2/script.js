@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
   });
 
-  $("#button2").on("click", function() {
+  $("#button2").on("click", function(event) {
     $.getJSON("./data2.json", function(data) {
         $("#resultado2").append(data.name + ", " + data.age + "<br>");
 
@@ -21,7 +21,17 @@ $(document).ready(function () {
             $("#resultado2").append("Amigo " + (parseInt(i)+1) + ": " + friendName + "<br>");
         }
     });
+  });
 
+  $("#button3").on("click", function(event) {
+    $.getJSON("./data3.json", function(data) {
+      for(let i in data.results) {
+        $("#resultado3").append(data.results[i].gender + "<br>");
+        $("#resultado3").append(data.results[i].name.first + "<br>");
+        $("#resultado3").append(data.results[i].email + "<br>");
+      }
+      $("#resultado3").append(data.info.seed + "<br>");
+    });
   });
 
   $("#limpar").on("click", function (event) {
