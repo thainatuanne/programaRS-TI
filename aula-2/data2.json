@@ -3,7 +3,7 @@
     "age": 30,
     
     "friends": [{
-        "firstName": "Mike",
+        "firsName": "Mike",
         "lastName": "Jones"
     }, 
     {
